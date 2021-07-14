@@ -7,7 +7,12 @@
   letter-spacing: 0.2px;
 }
 .main {
-  background-image: linear-gradient(90deg, #f8fcfe, #ffffff);
+  background-image: linear-gradient(180deg, #f8fcfe, #ffffff);
+}
+.btn:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: 0 1rem 2rem rgba(130, 133, 133, 0.175) !important;
+  outline: -webkit-focus-ring-color auto 0px !important;
 }
 .call-btn {
   background: #0033ff;
@@ -17,9 +22,13 @@
   /* outline: 3px solid #0033ff; */
   font-weight: 500;
 }
+
 .call-btn:hover {
   background-image: linear-gradient(106deg, #0033ff, #5274ff);
   color: white;
+}
+.reg-btn:hover {
+  box-shadow: 0 1rem 2rem rgba(130, 133, 133, 0.175) !important;
 }
 .navbar {
   padding-top: 1rem;
@@ -128,5 +137,40 @@
   background-color: rgba(238, 255, 0, 0.336);
   position: absolute;
   bottom: 20px;
+  border-radius: 50%;
   left: 1px;
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.mylist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mylist li {
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+.mylist li::marker {
+  content: "+";
+  font-weight: bold;
+  color: #ff0000;
+}
+.mylist2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mylist2 li {
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+.mylist2 li::marker {
+  content: "✅";
+  font-weight: bold;
+  color: #ff0000;
 }
