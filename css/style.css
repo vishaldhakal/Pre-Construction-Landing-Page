@@ -15,16 +15,18 @@
   outline: -webkit-focus-ring-color auto 0px !important;
 }
 .call-btn {
-  background: #0033ff;
+  background: #ff0000;
   border-radius: 5px;
   color: white;
   /* border: 2px solid #ffffff; */
-  /* outline: 3px solid #0033ff; */
+  /* outline: 3px solid #ff0000; */
   font-weight: 500;
 }
-
+.fss {
+  font-size: 25px !important;
+}
 .call-btn:hover {
-  background-image: linear-gradient(106deg, #0033ff, #5274ff);
+  background-image: linear-gradient(106deg, #ff0000, #5274ff);
   color: white;
 }
 .reg-btn,
@@ -61,11 +63,11 @@
   text-decoration: none;
 }
 .nav-link-active2 {
-  color: #0033ff !important;
+  color: #ff0000 !important;
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-thickness: 2px;
-  text-decoration-color: #0033ff;
+  text-decoration-color: #ff0000;
 }
 .cta-title {
   line-height: 3rem !important;
@@ -179,4 +181,40 @@
   font-size: 1.2rem;
   max-width: 500px;
   line-height: 2rem;
+}
+.imghei {
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
+.afte {
+  position: relative;
+  display: block;
+}
+.no-border:focus,
+.no-border:active {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+  border-color: #ff0000;
+}
+.fields {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgb(214, 206, 206);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.myps3 {
+  top: 7rem;
+  right: 0;
+  z-index: 99 !important;
+  position: sticky;
+  border-top: 3px solid red;
+}
+.bordlef {
+  border-left: 5px solid red;
+  padding: 0rem 0.7rem;
 }
