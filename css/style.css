@@ -224,6 +224,8 @@
   right: 0;
   z-index: 99 !important;
   position: sticky;
+}
+.bordt {
   border-top: 3px solid rgb(0, 0, 0);
 }
 .bordlef {
