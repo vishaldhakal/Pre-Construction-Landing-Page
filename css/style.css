@@ -258,3 +258,8 @@
 .small-text {
   font-size: 0.8rem;
 }
+
+:checked {
+  background-color: rgb(0, 0, 0) !important;
+  border-color: rgb(0, 0, 0) !important;
+}
