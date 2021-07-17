@@ -116,6 +116,20 @@
 .rounded-mine {
   border-radius: 8px;
 }
+.rounded-top-mine {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.btn-minee {
+  border-radius: 8px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  background-color: rgb(245, 245, 245);
+  color: rgb(0, 0, 0);
+}
+.btn-minee:hover {
+  color: rgb(0, 0, 0);
+}
 .fw-mine2 {
   font-weight: 700;
   letter-spacing: 0.4px;
@@ -240,4 +254,7 @@
 .bordlef {
   border-bottom: 5px solid rgb(0, 0, 0);
   /*   padding: 0rem 0.7rem; */
+}
+.small-text {
+  font-size: 0.8rem;
 }
