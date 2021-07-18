@@ -243,7 +243,7 @@
   background-color: #ffffff;
 }
 .myps3 {
-  top: 9rem;
+  top: 7rem;
   right: 0;
   z-index: 99 !important;
   position: sticky;
@@ -258,7 +258,9 @@
 .small-text {
   font-size: 0.7rem;
 }
-
+.bg-mine {
+  background-color: #443f3f !important;
+}
 :checked {
   background-color: rgb(0, 0, 0) !important;
   border-color: rgb(0, 0, 0) !important;
@@ -270,11 +272,7 @@
   font-size: 0.9rem;
 }
 .imgmm {
-  width: 75%;
-  position: absolute;
-  top: -10%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 60%;
 }
 .fss {
   font-size: 1.2rem;
@@ -295,9 +293,9 @@
   border-bottom-right-radius: 0px;
   height: 400px !important;
 }
-.mt-mine {
+/* .mt-mine {
   margin-top: 3rem;
-}
+} */
 .nav-pills .nav-item .nav-link {
   background-color: #f8f9fa;
   color: black;
@@ -323,7 +321,9 @@
 .shadow-lg {
   box-shadow: 0 1rem 2rem rgba(130, 133, 133, 0.175) !important;
 }
-
+.badge {
+  border-radius: 9999px;
+}
 @media (max-width: 700px) {
   .mess {
     height: 100px !important;
