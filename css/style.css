@@ -321,9 +321,6 @@
 .shadow-lg {
   box-shadow: 0 1rem 2rem rgba(130, 133, 133, 0.175) !important;
 }
-.badge {
-  border-radius: 9999px;
-}
 @media (max-width: 700px) {
   .mess {
     height: 100px !important;
