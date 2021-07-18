@@ -243,7 +243,7 @@
   background-color: #ffffff;
 }
 .myps3 {
-  top: 12rem;
+  top: 9rem;
   right: 0;
   z-index: 99 !important;
   position: sticky;
@@ -270,9 +270,9 @@
   font-size: 0.9rem;
 }
 .imgmm {
-  width: 60%;
+  width: 75%;
   position: absolute;
-  top: -20%;
+  top: -10%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -296,7 +296,7 @@
   height: 400px !important;
 }
 .mt-mine {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 .nav-pills .nav-item .nav-link {
   background-color: #f8f9fa;
