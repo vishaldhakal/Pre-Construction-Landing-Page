@@ -124,7 +124,7 @@
   border-radius: 8px !important;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
-  background-color: rgb(245, 245, 245);
+  background-color: #f8f9fa;
   color: rgb(0, 0, 0);
 }
 .btn-minee:hover {
@@ -243,7 +243,7 @@
   background-color: #ffffff;
 }
 .myps3 {
-  top: 7rem;
+  top: 12rem;
   right: 0;
   z-index: 99 !important;
   position: sticky;
@@ -256,7 +256,7 @@
   /*   padding: 0rem 0.7rem; */
 }
 .small-text {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 :checked {
@@ -271,7 +271,86 @@
 }
 .imgmm {
   width: 60%;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .fss {
   font-size: 1.2rem;
+}
+.fs-m {
+  font-size: 1rem;
+}
+.fw-mine {
+  font-weight: 600;
+  padding: 0.4rem;
+}
+#myVideo {
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 0px;
+  height: 400px !important;
+}
+.mt-mine {
+  margin-top: 6rem;
+}
+.nav-pills .nav-item .nav-link {
+  background-color: #f8f9fa;
+  color: black;
+}
+.nav-pills .nav-item .nav-link:hover {
+  text-decoration: none;
+  border: none;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  font-size: 1rem !important;
+  font-weight: 500;
+  background-color: #000000;
+  color: #ffffff !important;
+}
+.nav-pills .nav-item .nav-link.active {
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  font-size: 1rem !important;
+  font-weight: 500;
+  background-color: #000000;
+  color: #ffffff !important;
+}
+.shadow-lg {
+  box-shadow: 0 1rem 2rem rgba(130, 133, 133, 0.175) !important;
+}
+
+@media (max-width: 700px) {
+  .mess {
+    height: 100px !important;
+  }
+  #myVideo {
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 0px;
+    height: 200px !important;
+  }
+  .imgmm {
+    width: 60%;
+    position: absolute;
+    top: -14%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main-titlee {
+    font-size: 3rem !important;
+  }
+  .headline-textt {
+    font-size: 0.9rem;
+  }
+  .imghei2 {
+    height: 100px;
+  }
 }
