@@ -882,7 +882,7 @@
               <p class="text-center fw-normal">Speak to an expert agent</p>
               <hr>
               <div class="my-3"></div>
-              <form method="GET" class="mb-3" action="https://gomilan.ca/contactFormAlba.php" id="contactForm">
+              <form method="POST" class="mb-3" action="https://gomilan.ca/contactFormAlba.php" id="contactForm">
                 <div class="row me-0 row-cols-2 g-4 me-0">
                   <div class="col mb-3"><input type="text" placeholder="Name" name="name" class="no-border fields fff">
                   </div>
@@ -1006,16 +1006,23 @@
     const form = document.getElementById("contactForm");
     const subbtn = document.getElementById("subbtn");
     subbtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      form.submit()
-      setTimeout(function () {
+      subbtn.value = "Sending..."
+      fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        mode: 'no-cors'
+      }).then((res) => {
+        subbtn.value = "Request Info";
         swal({
-          title: "Message received!",
+          title: "Success",
           text: "Message received Sucessfully !",
           button: false,
           timer: 2000
-        });
-      }, 4000);
+        })
+        form.reset()
+      }
+      )
+      e.preventDefault();
     })
   </script>
   <script src="js/plan.js"></script>
