@@ -882,7 +882,7 @@
               <p class="text-center fw-normal">Speak to an expert agent</p>
               <hr>
               <div class="my-3"></div>
-              <form method="GET" class="mb-3" action="https://gomilan.ca/contactFormAlba.php">
+              <form method="GET" class="mb-3" action="https://gomilan.ca/contactFormAlba.php" id="contactForm">
                 <div class="row me-0 row-cols-2 g-4 me-0">
                   <div class="col mb-3"><input type="text" placeholder="Name" name="name" class="no-border fields fff">
                   </div>
@@ -919,7 +919,7 @@
                     </label>
                   </div>
                 </div> -->
-                <input type="submit" value="Request Info" class="btn call-btn btn-lg w-100 mb-3">
+                <input type="submit" value="Request Info" class="btn call-btn btn-lg w-100 mb-3" id="subbtn">
                 <div class="d-flex">
                   <p class="small-text mb-0">
                     By registering you are opting in to receive updates, invitations and e-mail offers. We do not share
@@ -1001,12 +1001,22 @@
       </div>
     </div>
   </footer>
+  <script src="js/sweetalert.min.js"></script>
   <script>
-    if (sessionStorage.getItem("success")) {
-      alert(sessionStorage.getItem("success"))
-    } else if (sessionStorage.getItem("error")) {
-      alert(sessionStorage.getItem("error"))
-    }
+    const form = document.getElementById("contactForm");
+    const subbtn = document.getElementById("subbtn");
+    subbtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      form.submit()
+      setTimeout(function () {
+        swal({
+          title: "Message received!",
+          text: "Message received Sucessfully !",
+          button: false,
+          timer: 2000
+        });
+      }, 4000);
+    })
   </script>
   <script src="js/plan.js"></script>
   <script src="js/all.js"></script>
