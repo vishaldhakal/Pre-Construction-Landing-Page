@@ -366,6 +366,7 @@
 }
 .bottomlogo {
   font-size: 3rem !important;
+  line-height: 1.8rem;
   color: black;
 }
 .bottomlogo:hover {
@@ -387,7 +388,7 @@
   .imgmm {
     width: 60%;
     position: absolute;
-    top: -14%;
+    top: -15%;
     left: 50%;
     transform: translateX(-50%);
   }
